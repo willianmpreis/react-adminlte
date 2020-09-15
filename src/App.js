@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './lte/dependencies'
 import NavBar from './lte/NavBar'
 import MainSidebarContainer from './lte/MainSidebarContainer'
 import ContentWrapper from './lte/ContentWrapper';
