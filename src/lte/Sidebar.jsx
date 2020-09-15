@@ -6,7 +6,7 @@ import SideBarUserPanel from './SidebarUserPanel'
 function Sidebar(props) {
     return (
         <div className="sidebar">
-            <SideBarUserPanel />
+            <SideBarUserPanel userName="Willian Reis" imagePath="assets/dist/img/user2-160x160.jpg" />
             <SideBarMenu />
         </div>  
     )
