@@ -1,7 +1,7 @@
 import React from 'react'
 
 function SideBarMenuTree(props) {
-  const { label, icon, path, children } = props
+  const { label, icon, path, children, labelComponent } = props
   const active = props.active ? 'active' : ''
 
   return (
@@ -10,7 +10,8 @@ function SideBarMenuTree(props) {
           <i className={`nav-icon fas fa-${icon} ${active}`}></i>
             <p>
               { label }
-              <i className="right fas fa-angle-left"></i>
+              { children && children.length ? <i className="right fas fa-angle-left"></i> : '' }
+              {labelComponent}
            </p>
         </a>
         <ul className="nav nav-treeview">

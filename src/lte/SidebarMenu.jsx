@@ -1,5 +1,5 @@
 import React from 'react'
-import SideBarMenuTree from './SideBarMenuITree'
+import SideBarMenuTree from './SideBarMenuTree'
 import SideBarMenuItem from './SideBarMenuItem'
 
 function SideBarMenu(props) {
@@ -7,104 +7,23 @@ function SideBarMenu(props) {
       <nav className="mt-2">
         <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
          
-         {/* "nav-item has-treeview */}
          <SideBarMenuTree label="Dashboard" icon="tachometer-alt" path="#" active>             
             <SideBarMenuItem path="./index1.html" label="Dashboard v1" />
             <SideBarMenuItem path="./index2.html" label="Dashboard v2" />
             <SideBarMenuItem path="./index3.html" label="Dashboard v3" active />
          </SideBarMenuTree>
+         
+         <SideBarMenuTree label="Widgets" icon="th" path="#" labelComponent={<span className="right badge badge-danger">New</span>} />
+                    
+          <SideBarMenuTree label="Layout Options" icon="copy" path="#" labelComponent={<span className="badge badge-info right">6</span>}>             
+            <SideBarMenuItem path="#" label="Top Navigation" />
+            <SideBarMenuItem path="#" label="Boxed" />
+            <SideBarMenuItem path="#" label="Fixed Sidebar" />
+            <SideBarMenuItem path="#" label="Fixed Navbar" />
+            <SideBarMenuItem path="#" label="Fixed Footer" />
+            <SideBarMenuItem path="#" label="Collapsed Sidebar" />
+         </SideBarMenuTree>
 
-
-         {/* "nav-item has-treeview */}
-         <li className="nav-item has-treeview menu-open">
-            <a href="#" className="nav-link active">
-              <i className="nav-icon fas fa-tachometer-alt"></i>
-              <p>
-                Dashboard
-                <i className="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul className="nav nav-treeview">
-              <li className="nav-item">
-                <a href="./index.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Dashboard v1</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="./index2.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Dashboard v2</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="./index3.html" className="nav-link active">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Dashboard v3</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li className="nav-item">
-            <a href="pages/widgets.html" className="nav-link">
-              <i className="nav-icon fas fa-th"></i>
-              <p>
-                Widgets
-                <span className="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
-          
-          {/* "nav-item has-treeview */}
-          <li className="nav-item has-treeview">
-            <a href="#" className="nav-link">
-              <i className="nav-icon fas fa-copy"></i>
-              <p>
-                Layout Options
-                <i className="fas fa-angle-left right"></i>
-                <span className="badge badge-info right">6</span>
-              </p>
-            </a>
-            <ul className="nav nav-treeview">
-              <li className="nav-item">
-                <a href="pages/layout/top-nav.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Top Navigation</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/layout/boxed.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Boxed</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/layout/fixed-sidebar.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Fixed Sidebar</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/layout/fixed-topnav.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Fixed Navbar</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/layout/fixed-footer.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Fixed Footer</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/layout/collapsed-sidebar.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Collapsed Sidebar</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
           {/* "nav-item has-treeview */}
           <li className="nav-item has-treeview">
             <a href="#" className="nav-link">
