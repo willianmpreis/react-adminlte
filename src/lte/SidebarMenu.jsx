@@ -24,37 +24,12 @@ function SideBarMenu(props) {
             <SideBarMenuItem path="#" label="Collapsed Sidebar" />
          </SideBarMenuTree>
 
-          {/* "nav-item has-treeview */}
-          <li className="nav-item has-treeview">
-            <a href="#" className="nav-link">
-              <i className="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Charts
-                <i className="right fas fa-angle-left"></i>
-              </p>
-            </a>
-            <ul className="nav nav-treeview">
-              <li className="nav-item">
-                <a href="pages/charts/chartjs.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>ChartJS</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/charts/flot.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Flot</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/charts/inline.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Inline</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
+         <SideBarMenuTree label="Charts" icon="chart-pie" path="#">             
+            <SideBarMenuItem path="#" label="ChartJS" />
+            <SideBarMenuItem path="#" label="Flot" />
+            <SideBarMenuItem path="#" label="Inline" />
+         </SideBarMenuTree>
+
           {/* "nav-item has-treeview */}
           <li className="nav-item has-treeview">
             <a href="#" className="nav-link">
