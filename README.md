@@ -1,3 +1,9 @@
+Este projeto é um recorte da estrutura do AdmimLte 3 (https://adminlte.io/themes/dev/AdminLTE/index3.html) para o React.
+
+Não está completo ainda, mas já é possível visualizar a interface aberta no React.
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
