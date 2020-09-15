@@ -30,67 +30,17 @@ function SideBarMenu(props) {
             <SideBarMenuItem path="#" label="Inline" />
          </SideBarMenuTree>
 
-          {/* "nav-item has-treeview */}
-          <li className="nav-item has-treeview">
-            <a href="#" className="nav-link">
-              <i className="nav-icon fas fa-tree"></i>
-              <p>
-                UI Elements
-                <i className="fas fa-angle-left right"></i>
-              </p>
-            </a>
-            <ul className="nav nav-treeview">
-              <li className="nav-item">
-                <a href="pages/UI/general.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>General</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/icons.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Icons</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/buttons.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Buttons</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/sliders.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Sliders</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/modals.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Modals & Alerts</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/navbar.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Navbar & Tabs</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/timeline.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Timeline</p>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a href="pages/UI/ribbons.html" className="nav-link">
-                  <i className="far fa-circle nav-icon"></i>
-                  <p>Ribbons</p>
-                </a>
-              </li>
-            </ul>
-          </li>
-          
+         <SideBarMenuTree label="UI Elements" icon="tree" path="#">             
+            <SideBarMenuItem path="#" label="General" />
+            <SideBarMenuItem path="#" label="Icons" />
+            <SideBarMenuItem path="#" label="Buttons" />
+            <SideBarMenuItem path="#" label="Sliders" />
+            <SideBarMenuItem path="#" label="Modals & Alerts" />
+            <SideBarMenuItem path="#" label="Navbar & Tabs" />
+            <SideBarMenuItem path="#" label="Timeline" />
+            <SideBarMenuItem path="#" label="Ribbons" />
+         </SideBarMenuTree>
+
           {/* "nav-item has-treeview */}
           <li className="nav-item has-treeview">
             <a href="#" className="nav-link">
