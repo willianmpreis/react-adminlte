@@ -7,6 +7,10 @@ function SideBarMenu(props) {
         <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
          
          {/* "nav-item has-treeview */}
+         <SideBarMenuTree title="Dashboard" icon="tachometer-alt" path="#" active />
+
+
+         {/* "nav-item has-treeview */}
          <li className="nav-item has-treeview menu-open">
             <a href="#" className="nav-link active">
               <i className="nav-icon fas fa-tachometer-alt"></i>
