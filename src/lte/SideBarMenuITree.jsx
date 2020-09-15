@@ -1,8 +1,7 @@
 import React from 'react'
-import SideBarMenuItem from './SideBarMenuItem'
 
 function SideBarMenuTree(props) {
-  const { title, icon, path } = props
+  const { label, icon, path, children } = props
   const active = props.active ? 'active' : ''
 
   return (
@@ -10,14 +9,12 @@ function SideBarMenuTree(props) {
         <a href={path} className={`nav-link ${active}`}>
           <i className={`nav-icon fas fa-${icon} ${active}`}></i>
             <p>
-              { title }
+              { label }
               <i className="right fas fa-angle-left"></i>
            </p>
         </a>
         <ul className="nav nav-treeview">
-          <SideBarMenuItem path="./index1.html" label="Dashboard v1" />
-          <SideBarMenuItem path="./index2.html" label="Dashboard v2" />
-          <SideBarMenuItem path="./index3.html" label="Dashboard v3" active />
+          {children}
         </ul>
     </li>
   )

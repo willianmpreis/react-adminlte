@@ -1,5 +1,6 @@
 import React from 'react'
 import SideBarMenuTree from './SideBarMenuITree'
+import SideBarMenuItem from './SideBarMenuItem'
 
 function SideBarMenu(props) {
     return (
@@ -7,7 +8,11 @@ function SideBarMenu(props) {
         <ul className="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
          
          {/* "nav-item has-treeview */}
-         <SideBarMenuTree title="Dashboard" icon="tachometer-alt" path="#" active />
+         <SideBarMenuTree label="Dashboard" icon="tachometer-alt" path="#" active>             
+            <SideBarMenuItem path="./index1.html" label="Dashboard v1" />
+            <SideBarMenuItem path="./index2.html" label="Dashboard v2" />
+            <SideBarMenuItem path="./index3.html" label="Dashboard v3" active />
+         </SideBarMenuTree>
 
 
          {/* "nav-item has-treeview */}
