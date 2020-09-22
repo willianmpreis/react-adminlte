@@ -1,6 +1,6 @@
 import React from 'react'
 
-function Sidebar(props) {
+function Footer(props) {
     return (
         <footer className="main-footer">
             { props.children }
@@ -8,4 +8,4 @@ function Sidebar(props) {
     )
 }
 
-export default Sidebar
+export default Footer
